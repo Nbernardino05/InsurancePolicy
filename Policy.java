@@ -1,15 +1,14 @@
-//Project 3 solution
+
 public class Policy
 {
    private String policyNumber;
    private String providerName;
    private PolicyHolder ph;
    
-   public static int numOfPolicies = 0;//static field to keep track of the number of Policy objects
+   public static int numOfPolicies = 0; //static field to keep track of number of Policy objects
    
-   /**
-   No-arg constructor that explicitly initializes all fields
-   */
+   
+   //No-arg constructor (explicitly initializes all fields)
    public Policy()
    {
       policyNumber = "";
@@ -31,6 +30,8 @@ public class Policy
       this.ph = new PolicyHolder(ph);//create a "deep copy" using the PolicyHolder's copy constructor
       numOfPolicies++;
    }
+   
+
    
    //getters//
    /**

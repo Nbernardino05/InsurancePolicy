@@ -23,13 +23,12 @@ public class PolicyDemo
       ArrayList<Policy> policyList = new ArrayList<Policy>();
       
       //create and open the file
-      File file = new File("PolicyInformation.txt");
+      File file = new File("PolicyInformation.txt"); //
       Scanner inputFile = new Scanner(file);
       
       //process all information in the file
       while(inputFile.hasNext())
       {
-      
          policyNumber = inputFile.nextLine();
          providerName = inputFile.nextLine();
          firstName = inputFile.nextLine();
