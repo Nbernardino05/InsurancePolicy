@@ -1,4 +1,3 @@
-//Project 3 solution
 public class PolicyHolder
 {
    private String firstName;
